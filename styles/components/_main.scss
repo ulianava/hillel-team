@@ -33,6 +33,59 @@
     margin: 0 auto;
     width: 1170px;
 }
+
+.contacts, .footer{
+    background-color: black;
+}
+// лучше прееименовать 
+.container{
+    width: 1170px;
+   
+    .box{
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+     .logo{
+        align-items: center;
+        display: flex;
+        .logo1{
+            width: 60px;
+        }
+        .text{
+            color: beige;
+            margin-left: 14px;
+            font-size: 14px;
+            font-weight: 250;
+            font-family: "Raleway";
+        }
+        
+    }
+    .icon{
+        width: 200px;
+        margin-left: 630px;
+    }
+  }
+  .box-l{
+    display: flex;
+   .adress{
+    width: 470px;
+    background: rgb(40, 102, 189) ;
+    color: white;
+    padding: 38px 0 44px 80px;
+      .text-c {
+        font-size: 20px;
+         font-weight: 700;
+       font-family: "Raleway";
+    }
+    .text-contacts{
+        font-size: 14px;
+font-weight: 300;
+font-family: "Raleway";
+    }
+  }  
+ }
+}
+=======
 header{
     position: relative;
     & .header-wrap{
@@ -107,3 +160,4 @@ header{
         }
     }
 }
+
