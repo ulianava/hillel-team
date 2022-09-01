@@ -282,30 +282,15 @@ header .first-screen-content-section .photo-wrap::before {
   padding-left: 6px;
   display: grid;
   grid-gap: 6px;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 534px 250px;
-}
-.works .wrapper .car {
-  width: 416px;
-  height: 292px;
-}
-.works .wrapper .window {
-  width: 416px;
-  height: 327px;
-}
-.works .wrapper .plate {
-  width: 418px;
-  height: 327px;
+  grid-template-rows: 390px 275px;
+  grid-template-columns: 500px 250px;
+  justify-items: stretch;
 }
 .works .wrapper .cards {
-  width: 548px;
+  width: 500px;
   height: 327px;
 }
 .works .wrapper .mountains {
   width: 422px;
-  height: 284px;
-}
-.works .wrapper .skate {
-  width: 550px;
-  height: 287px;
+  height: 229px;
 }/*# sourceMappingURL=index.css.map */
