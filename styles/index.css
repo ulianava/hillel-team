@@ -37,18 +37,21 @@
   width: 200px;
   margin-left: 630px;
 }
-.container .adress {
+.container .box-l {
+  display: flex;
+}
+.container .box-l .adress {
   width: 470px;
   background: rgb(40, 102, 189);
   color: white;
   padding: 38px 0 44px 80px;
 }
-.container .adress .text-c {
+.container .box-l .adress .text-c {
   font-size: 20px;
   font-weight: 700;
   font-family: "Raleway";
 }
-.container .adress .text-contacts {
+.container .box-l .adress .text-contacts {
   font-size: 14px;
   font-weight: 300;
   font-family: "Raleway";

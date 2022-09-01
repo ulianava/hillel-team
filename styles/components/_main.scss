@@ -35,7 +35,9 @@
         margin-left: 630px;
     }
   }
-  .adress{
+  .box-l{
+    display: flex;
+   .adress{
     width: 470px;
     background: rgb(40, 102, 189) ;
     color: white;
@@ -50,6 +52,6 @@
 font-weight: 300;
 font-family: "Raleway";
     }
-  }
-    
+  }  
+ }
 }
