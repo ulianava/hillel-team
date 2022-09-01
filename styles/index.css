@@ -55,6 +55,9 @@
   width: 200px;
   margin-left: 630px;
 }
+.container .box .icon .fa-brands {
+  font-size: 15px;
+}
 .container .box-3 {
   background: rgb(239, 72, 54);
   display: flex;
