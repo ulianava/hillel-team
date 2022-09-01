@@ -250,6 +250,36 @@ header{
         padding-top: 35px;
 
     }
+}
+.wrapper{
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 410px 420px 546px;
+    grid-template-rows: 339px 50px 339px 50px 339px 50px;
+    .car{
+        width: 416px;
+        height: 340px;
+    }
+    .window{
+        width: 416px;
+        height: 327px;
+    }
+    .plate{
+        width: 418px;
+        height: 327px;
+    }
+    .cards{
+        width: 548px;
+        height: 327px;
 
-
+    }
+    .mountains{
+        width: 422px;
+        height: 284px;
+    }
+    .skate{
+        width: 550px;
+        height: 287px;
+    }
 }
