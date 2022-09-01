@@ -251,35 +251,55 @@ header{
 
     }
 }
-.wrapper{
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 6px;
-    grid-template-columns: 410px 420px 546px;
-    grid-template-rows: 339px 50px 339px 50px 339px 50px;
-    .car{
-        width: 416px;
-        height: 340px;
-    }
-    .window{
-        width: 416px;
-        height: 327px;
-    }
-    .plate{
-        width: 418px;
-        height: 327px;
-    }
-    .cards{
-        width: 548px;
-        height: 327px;
+.works{
+    background: #000;
+    .wrapper{
+        width: 1400px;
+        margin: 0 auto;
+        display: flex;
 
-    }
-    .mountains{
-        width: 422px;
-        height: 284px;
-    }
-    .skate{
-        width: 550px;
-        height: 287px;
+        .first-row{
+            display: grid;
+            grid-template-rows: repeat(2, 292px);
+            grid-template-columns: 1fr;
+            gap: 6px;
+        }
+     
+        .flex-wrap{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .second-coll{
+            padding-left: 6px;
+            display: grid;
+            grid-gap: 6px;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns:   534px 250px;
+        }
+        .car{
+            width: 416px;
+            height: 292px;
+        }
+        .window{
+            width: 416px;
+            height: 327px;
+        }
+        .plate{
+            width: 418px;
+            height: 327px;
+        }
+        .cards{
+            width: 548px;
+            height: 327px;
+
+        }
+        .mountains{
+            width: 422px;
+            height: 284px;
+        }
+        .skate{
+            width: 550px;
+            height: 287px;
+        }
     }
 }

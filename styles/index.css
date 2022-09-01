@@ -260,34 +260,52 @@ header .first-screen-content-section .photo-wrap::before {
   padding-top: 35px;
 }
 
-.wrapper {
+.works {
+  background: #000;
+}
+.works .wrapper {
+  width: 1400px;
   margin: 0 auto;
+  display: flex;
+}
+.works .wrapper .first-row {
+  display: grid;
+  grid-template-rows: repeat(2, 292px);
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+.works .wrapper .flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.works .wrapper .second-coll {
+  padding-left: 6px;
   display: grid;
   grid-gap: 6px;
-  grid-template-columns: 410px 420px 546px;
-  grid-template-rows: 339px 50px 339px 50px 339px 50px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 534px 250px;
 }
-.wrapper .car {
+.works .wrapper .car {
   width: 416px;
-  height: 340px;
+  height: 292px;
 }
-.wrapper .window {
+.works .wrapper .window {
   width: 416px;
   height: 327px;
 }
-.wrapper .plate {
+.works .wrapper .plate {
   width: 418px;
   height: 327px;
 }
-.wrapper .cards {
+.works .wrapper .cards {
   width: 548px;
   height: 327px;
 }
-.wrapper .mountains {
+.works .wrapper .mountains {
   width: 422px;
   height: 284px;
 }
-.wrapper .skate {
+.works .wrapper .skate {
   width: 550px;
   height: 287px;
 }/*# sourceMappingURL=index.css.map */
