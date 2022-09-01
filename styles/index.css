@@ -5,4 +5,20 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+}
+
+.fsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+}
+header ul li a {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */
