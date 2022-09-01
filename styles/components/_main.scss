@@ -21,7 +21,8 @@
 .invisible-heading{
     opacity: 0.03;
     font-family: 'Raleway';
-    @include font (128px,800,normal,#fff);
+    @include font (128px,800,0.7,#fff);
+    text-transform: uppercase;
 }
 header{
     position: relative;
@@ -57,7 +58,6 @@ header{
             }
         }
     }
-    
     &.bg-cover{
         background-image:linear-gradient(0deg, #010102 0%, #031224 100%);;
         background-repeat:no-repeat;
@@ -160,7 +160,7 @@ header{
       .text-c {
         font-size: 20px;
         font-weight: 700;
-       font-family: "Raleway";
+        font-family: "Raleway";
     }
     .text-contacts{
         font-size: 14px;
@@ -173,7 +173,7 @@ header{
 
 }
 .link-to{
-    @include font(18px,700,66px,#fff);
+    @include font(18px,600,66px,#fff);
     letter-spacing: 1px;
     & img{
         margin-left: 14px;
@@ -220,5 +220,36 @@ header{
         left: 615px;
         bottom: 80px;
     }
+
+}
+.services{
+    background-color: #000;
+    padding-top: 184px;
+    padding-bottom: 180px;
+    & .invisible-heading{
+        text-align: end;
+    }
+    & .first{
+        & .services-content{
+            width: 280px;
+        }
+    }
+    .header-block{
+        display: flex;
+
+    }
+    .services-heading{
+        margin-left: 25px;
+        @include font(24px,300,26px,#fff);
+    }
+    
+    .services-content{
+        width: 320px;
+        @include font(14px,200,26px,#fff);
+        letter-spacing: 1px;
+        padding-top: 35px;
+
+    }
+
 
 }
