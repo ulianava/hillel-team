@@ -84,8 +84,11 @@ header{
     }
     // $font-size, $font-weight, $line-height, $font-color
     & .first-screen-content-section{
+        padding-top: 220px;
         position: relative;
+        display: flex;
         & .content{
+           padding-left: 99px;
             & .header{
                 @include font(48px,300,66px,#fff);
                 width: 327px;
@@ -96,6 +99,11 @@ header{
                 letter-spacing: 1px;
                 @include font(16px,250,32px,#fff);
             }
+        }
+        .face-photo{
+            height: 544px;
+            width: 470px;
+
         }
     }
 }

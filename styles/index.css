@@ -73,7 +73,12 @@ header .bg-forest {
   opacity: 0.1;
 }
 header .first-screen-content-section {
+  padding-top: 220px;
   position: relative;
+  display: flex;
+}
+header .first-screen-content-section .content {
+  padding-left: 99px;
 }
 header .first-screen-content-section .content .header {
   font-size: 48px;
@@ -90,4 +95,8 @@ header .first-screen-content-section .content p {
   font-weight: 250;
   line-height: 32px;
   color: #fff;
+}
+header .first-screen-content-section .face-photo {
+  height: 544px;
+  width: 470px;
 }/*# sourceMappingURL=index.css.map */
