@@ -93,6 +93,7 @@ header{
                 @include font(48px,300,66px,#fff);
                 width: 327px;
                 letter-spacing: 2px;
+                padding-bottom: 28px;
             }
             & p{
                 width: 508px;
@@ -108,10 +109,27 @@ header{
 
             }
         }
-        .face-photo{
-            height: 544px;
-            width: 470px;
-          
+        .photo-wrap{
+            position: relative;
+            .face-photo{
+                height: 544px;
+                width: 470px;
+                &::before{
+                    content: "";
+                    color: $white-color;
+                    width: 91px;
+                    height: 1px;
+                    position: absolute;
+                }
+            }
+            .btn-photo{
+                position: absolute;
+                top: 227px;
+                left: 190px;
+                width: 100px;
+                height: 100px;
+                
+            }
         }
     }
 }
