@@ -57,6 +57,10 @@
 }
 .container .box .icon .fa-brands {
   font-size: 15px;
+  color: #ffffff;
+}
+.container .box .icon .fa-brands:hover {
+  color: blue;
 }
 .container .box-3 {
   background: rgb(239, 72, 54);
