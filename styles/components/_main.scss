@@ -1,13 +1,43 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/');
+    src: url('../assets/fonts/?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Raleway-Thin.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Thin.woff') format('woff'),
+        url('../assets/fonts/Raleway-Thin.ttf') format('truetype'),
+        url('../assets/fonts/Raleway-Thin.svg#Raleway-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: 'Raleway'
 }
+
+
+.fsb{
+    display: flex;
+    justify-content: space-between;
+}
+.aic{
+    align-items: center;
+}
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+
 .contacts, .footer{
     background-color: black;
 }
+// лучше прееименовать 
 .container{
     width: 1170px;
    
@@ -48,10 +78,122 @@
        font-family: "Raleway";
     }
     .text-contacts{
+        margin-bottom: 20px;
         font-size: 14px;
 font-weight: 300;
 font-family: "Raleway";
     }
   }  
+   .touch{
+    width: 700px;
+    background: rgb(28, 28, 28);
+    display: block;
+    .text-touch{
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "Raleway";
+        margin-left: 60px;
+        margin-top: 65px;
+    }
+    input{
+        display: none;
+    }
+    label{
+        width: 390px;
+        height: 40px;
+        background: rgb(28, 28, 28);
+        color: beige;
+        margin-left: 60px;
+        border-bottom: 1px solid beige;
+    }
+    label:hover{
+        color: blue;
+    }
+    button{
+        background: rgb(28, 28, 28);
+        color: rgb(239, 72, 54);
+        margin-left: 60px;
+        margin-top: 50px;
+    }
+    
+    }
+   
  }
 }
+
+header{
+    position: relative;
+    & .header-wrap{
+        padding-top: 66px;
+        z-index: 2;
+        & .logo{ 
+            display: inline-block;
+            height: 33px;
+            width: 33px;
+            position: relative;
+        }
+        & ul{ 
+            width: 752px;
+            li{
+                a{
+                    position: relative;
+                    color: $white-color;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    line-height: 26px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    z-index: 2;
+                    
+                }
+                & .menu-item:hover{
+                    color: $nav-hover-color;
+
+                }
+            }
+        }
+    }
+    
+    &.bg-cover{
+        background-image:linear-gradient(0deg, #010102 0%, #031224 100%);;
+        background-repeat:no-repeat;
+        background-position: center;
+
+        height: 100vh;
+
+    }
+    & .bg-forest{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.1;
+    }
+    // $font-size, $font-weight, $line-height, $font-color
+    & .first-screen-content-section{
+        padding-top: 220px;
+        position: relative;
+        display: flex;
+        & .content{
+           padding-left: 99px;
+            & .header{
+                @include font(48px,300,66px,#fff);
+                width: 327px;
+                letter-spacing: 2px;
+            }
+            & p{
+                width: 508px;
+                letter-spacing: 1px;
+                @include font(16px,250,32px,#fff);
+            }
+        }
+        .face-photo{
+            height: 544px;
+            width: 470px;
+
+        }
+    }
+}
+
