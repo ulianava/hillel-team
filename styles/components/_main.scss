@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -18,12 +19,152 @@
     margin: 0 auto;
     width: 1170px;
 }
+.testimonial{   
+    height: 440px;
+}
+.testimonial, .clients, .contacts, .footer{
+    background-color: black;
+}
+// лучше прееименовать 
+.container{
+    width: 1170px;
+   
+    & .box{
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+      .logo{
+        align-items: center;
+        display: flex;
+        .logo1{
+            width: 60px;
+        }
+        .text{
+            color: beige;
+            margin-left: 14px;
+            font-size: 14px;
+            font-weight: 250;
+        }
+        
+    }
+    .icon{
+        width: 200px;
+        margin-left: 630px;
+        .fa-brands{
+            font-size: 15px;
+            color: #ffffff;
+        }
+        .fa-brands:hover{
+            color: blue;
+        }
+    }
+  }
+   .box-3{
+    background: rgb(239, 72, 54);
+    display: flex;
+     .block{
+        margin-left: 50px;
+        .text-test, .text-test1{
+          width: 490px;
+          color: #ffffff;
+          margin-top: 60px;
+       }
+    }
+    .pagination{
+        color: rgb(194, 53, 38);
+        margin-top: 358px;
+        width: 40px;
+    }
+    .pagination:hover{
+        color: #ffffff;
+    }
+   } 
+    
+  .box-l{
+    display: flex;
+   .adress{
+    width: 470px;
+    background: rgb(40, 102, 189) ;
+    color: white;
+    padding: 38px 0 44px 80px;
+      .text-c {
+        font-size: 20px;
+         font-weight: 700;
+    }
+    .text-contacts{
+        margin-bottom: 20px;
+        font-size: 14px;
+font-weight: 300;
+    }
+  }  
+   .touch{
+    width: 700px;
+    background: rgb(28, 28, 28);
+    display: block;
+    
+    .text-touch{
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-left: 60px;
+        margin-top: 65px;
+    }
+    
+    .touch-sm{
+        margin-left: 60px;
+        margin-top: 30px;
+        input{
+            display: none;
+        }
+        label{
+            width: 390px;
+            height: 40px;
+            background: rgb(28, 28, 28);
+            color: beige;
+            
+            border-bottom: 1px solid beige;
+        }
+        label:hover{
+            color: blue;
+            border-bottom: 1px solid blue;
+        }
+        
+
+    }
+    button{
+        background: rgb(28, 28, 28);
+        color: rgb(239, 72, 54);
+        margin-left: 60px;
+        margin-top: 50px;
+    }
+    
+    
+}
+   
+ }
+ .box-2{
+    padding: 105px 0;
+ }
+ .logo2:first-child{
+    margin-left: 30px;
+
+ }
+ .logo2:nth-child(n+1){
+    margin-left: 80px;
+ }
+}
+
+
+
+
+=======
 .invisible-heading{
     opacity: 0.03;
     font-family: 'Raleway';
     @include font (128px,800,0.7,#fff);
     text-transform: uppercase;
 }
+
 header{
     position: relative;
     & .header-wrap{

@@ -6,6 +6,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
+
 }
 
 .fsb {
@@ -20,6 +21,132 @@
 .container {
   margin: 0 auto;
   width: 1170px;
+}
+
+.testimonial {
+  height: 440px;
+}
+
+.testimonial, .clients, .contacts, .footer {
+  background-color: black;
+}
+
+.container {
+  width: 1170px;
+}
+.container .box {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+.container .box .logo {
+  align-items: center;
+  display: flex;
+}
+.container .box .logo .logo1 {
+  width: 60px;
+}
+.container .box .logo .text {
+  color: beige;
+  margin-left: 14px;
+  font-size: 14px;
+  font-weight: 250;
+}
+.container .box .icon {
+  width: 200px;
+  margin-left: 630px;
+}
+.container .box .icon .fa-brands {
+  font-size: 15px;
+  color: #ffffff;
+}
+.container .box .icon .fa-brands:hover {
+  color: blue;
+}
+.container .box-3 {
+  background: rgb(239, 72, 54);
+  display: flex;
+}
+.container .box-3 .block {
+  margin-left: 50px;
+}
+.container .box-3 .block .text-test, .container .box-3 .block .text-test1 {
+  width: 490px;
+  color: #ffffff;
+  margin-top: 60px;
+}
+.container .box-3 .pagination {
+  color: rgb(194, 53, 38);
+  margin-top: 358px;
+  width: 40px;
+}
+.container .box-3 .pagination:hover {
+  color: #ffffff;
+}
+.container .box-l {
+  display: flex;
+}
+.container .box-l .adress {
+  width: 470px;
+  background: rgb(40, 102, 189);
+  color: white;
+  padding: 38px 0 44px 80px;
+}
+.container .box-l .adress .text-c {
+  font-size: 20px;
+  font-weight: 700;
+}
+.container .box-l .adress .text-contacts {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+=======
+
+}
+.container .box-l .touch {
+  width: 700px;
+  background: rgb(28, 28, 28);
+  display: block;
+}
+.container .box-l .touch .text-touch {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 300;
+  margin-left: 60px;
+  margin-top: 65px;
+}
+.container .box-l .touch .touch-sm {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.container .box-l .touch .touch-sm input {
+  display: none;
+}
+.container .box-l .touch .touch-sm label {
+  width: 390px;
+  height: 40px;
+  background: rgb(28, 28, 28);
+  color: beige;
+  border-bottom: 1px solid beige;
+}
+.container .box-l .touch .touch-sm label:hover {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+.container .box-l .touch button {
+  background: rgb(28, 28, 28);
+  color: rgb(239, 72, 54);
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.container .box-2 {
+  padding: 105px 0;
+}
+.container .logo2:first-child {
+  margin-left: 30px;
+}
+.container .logo2:nth-child(n+1) {
+  margin-left: 80px;
 }
 
 .invisible-heading {
@@ -107,6 +234,7 @@ header .first-screen-content-section .photo-wrap {
 header .first-screen-content-section .photo-wrap .face-photo {
   height: 544px;
   width: 470px;
+
 }
 header .first-screen-content-section .photo-wrap .btn-photo {
   position: absolute;
