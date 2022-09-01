@@ -8,7 +8,6 @@
     font-family: 'Raleway', sans-serif;
 }
 
-
 .fsb{
     display: flex;
     justify-content: space-between;
@@ -158,6 +157,14 @@ font-weight: 300;
 
 
 
+=======
+.invisible-heading{
+    opacity: 0.03;
+    font-family: 'Raleway';
+    @include font (128px,800,0.7,#fff);
+    text-transform: uppercase;
+}
+
 header{
     position: relative;
     & .header-wrap{
@@ -185,27 +192,25 @@ header{
                 }
                 & .menu-item:hover{
                     color: $nav-hover-color;
+                    font-weight: bold;
+                    letter-spacing: 2px;
 
                 }
             }
         }
     }
-    
     &.bg-cover{
         background-image:linear-gradient(0deg, #010102 0%, #031224 100%);;
         background-repeat:no-repeat;
         background-position: center;
-
-        height: 100vh;
-
     }
     & .bg-forest{
         position: absolute;
         left: 0;
         top: 0;
+        height: 784px;
         width: 100%;
-        height: auto;
-        opacity: 0.1;
+        opacity: 0.03;
     }
     // $font-size, $font-weight, $line-height, $font-color
     & .first-screen-content-section{
@@ -218,6 +223,7 @@ header{
                 @include font(48px,300,66px,#fff);
                 width: 327px;
                 letter-spacing: 2px;
+                padding-bottom: 28px;
             }
             & p{
                 width: 508px;
@@ -225,11 +231,217 @@ header{
                 @include font(16px,250,32px,#fff);
             }
         }
-        .face-photo{
-            height: 544px;
-            width: 470px;
+        .photo-wrap{
+            position: relative;
+            .face-photo{
+                height: 544px;
+                width: 470px;
+                
+            }
+            .btn-photo{
+                position: absolute;
+                top: 227px;
+                left: 190px;
+                width: 100px;
+                height: 100px;
 
+            }
+            &::before{
+                content: "";
+                border-bottom: 0.1px solid white;
+                width: 91px;
+                height: 1px;
+                position: absolute;
+                left: 435px;
+                top: 21px;
+            }
         }
     }
 }
 
+
+
+.contacts, .footer{
+    background-color: black;
+} 
+.container{
+    width: 1170px;
+   
+    .box{
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+     .logo{
+        align-items: center;
+        display: flex;
+        .logo1{
+            width: 60px;
+        }
+        .text{
+            color: beige;
+            margin-left: 14px;
+            font-size: 14px;
+            font-weight: 250;
+            font-family: "Raleway";
+        }
+        
+    }
+    .icon{
+        width: 200px;
+        margin-left: 630px;
+    }
+  }
+  .box-l{
+    display: flex;
+   .adress{
+    width: 470px;
+    background: rgb(40, 102, 189) ;
+    color: white;
+    padding: 38px 0 44px 80px;
+      .text-c {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Raleway";
+    }
+    .text-contacts{
+        font-size: 14px;
+        font-weight: 300;
+        font-family: "Raleway";
+    }
+
+}
+}
+
+}
+.link-to{
+    @include font(18px,600,66px,#fff);
+    letter-spacing: 1px;
+    & img{
+        margin-left: 14px;
+    }
+    &:hover{
+        font-size: 19px;
+        letter-spacing: 2px;   
+    }
+    
+
+}
+.about {
+    background-color: #000;
+    padding-top: 212px;
+    .about-text{
+        display: flex;
+        padding-top: 130px;
+        padding-bottom: 165px;
+        position: relative;
+        background-color: #205eba;
+        & .text-wrap{
+            padding-left: 62px;
+
+            & p{
+                padding-bottom: 20px;
+                width: 480px; 
+                @include font(16px,300,30px,#fff);
+                &::before{
+                    content: "";
+                    border-bottom: 0.1px solid white;
+                    width: 38px;
+                    height: 1px;
+                    position: absolute;
+                    left: 0px;
+                    top: 143px;
+                }
+            }
+        }
+    }
+    & .about-section-photo{
+        width: 473px;
+        height: 544px;
+        position: absolute;
+        left: 615px;
+        bottom: 80px;
+    }
+
+}
+.services{
+    background-color: #000;
+    padding-top: 184px;
+    padding-bottom: 180px;
+    & .invisible-heading{
+        text-align: end;
+    }
+    & .first{
+        & .services-content{
+            width: 280px;
+        }
+    }
+    .header-block{
+        display: flex;
+
+    }
+    .services-heading{
+        margin-left: 25px;
+        @include font(24px,300,26px,#fff);
+    }
+    
+    .services-content{
+        width: 320px;
+        @include font(14px,200,26px,#fff);
+        letter-spacing: 1px;
+        padding-top: 35px;
+
+    }
+}
+.works{
+    background: #000;
+    .wrapper{
+        width: 1400px;
+        margin: 0 auto;
+        display: flex;
+
+        .first-row{
+            display: grid;
+            grid-template-rows: repeat(2, 292px);
+            grid-template-columns: 1fr;
+            gap: 6px;
+        }
+     
+        .flex-wrap{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .second-coll{
+            padding-left: 6px;
+            display: grid;
+            grid-gap: 6px;  
+            grid-template-rows: 390px 275px;
+            grid-template-columns:   500px 250px;
+            justify-items: stretch;
+        }
+        // .car{
+        //     width: 416px;
+        //     height: 292px;
+        // }
+        // .window{
+        //     width: 416px;
+        //     height: 327px;
+        // }
+        // .plate{
+        //     width: 418px;
+        //     height: 327px;
+        // }
+        .cards{
+            width: 500px;
+            height: 327px;
+
+        }
+        .mountains{
+            width: 422px;
+            height: 229px;
+        }
+        // .skate{
+        //     width: 550px;
+        //     height: 287px;
+        // }
+    }
+}

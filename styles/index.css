@@ -6,6 +6,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
+
 }
 
 .fsb {
@@ -99,6 +100,8 @@
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 300;
+=======
+
 }
 .container .box-l .touch {
   width: 700px;
@@ -146,6 +149,16 @@
   margin-left: 80px;
 }
 
+.invisible-heading {
+  opacity: 0.03;
+  font-family: "Raleway";
+  font-size: 128px;
+  font-weight: 800;
+  line-height: 0.7;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 header {
   position: relative;
 }
@@ -174,20 +187,21 @@ header .header-wrap ul li a {
 }
 header .header-wrap ul li .menu-item:hover {
   color: #ef4836;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 header.bg-cover {
   background-image: linear-gradient(0deg, #010102 0%, #031224 100%);
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
 }
 header .bg-forest {
   position: absolute;
   left: 0;
   top: 0;
+  height: 784px;
   width: 100%;
-  height: auto;
-  opacity: 0.1;
+  opacity: 0.03;
 }
 header .first-screen-content-section {
   padding-top: 220px;
@@ -204,6 +218,7 @@ header .first-screen-content-section .content .header {
   color: #fff;
   width: 327px;
   letter-spacing: 2px;
+  padding-bottom: 28px;
 }
 header .first-screen-content-section .content p {
   width: 508px;
@@ -213,7 +228,197 @@ header .first-screen-content-section .content p {
   line-height: 32px;
   color: #fff;
 }
-header .first-screen-content-section .face-photo {
+header .first-screen-content-section .photo-wrap {
+  position: relative;
+}
+header .first-screen-content-section .photo-wrap .face-photo {
   height: 544px;
   width: 470px;
+
+}
+header .first-screen-content-section .photo-wrap .btn-photo {
+  position: absolute;
+  top: 227px;
+  left: 190px;
+  width: 100px;
+  height: 100px;
+}
+header .first-screen-content-section .photo-wrap::before {
+  content: "";
+  border-bottom: 0.1px solid white;
+  width: 91px;
+  height: 1px;
+  position: absolute;
+  left: 435px;
+  top: 21px;
+}
+
+.contacts, .footer {
+  background-color: black;
+}
+
+.container {
+  width: 1170px;
+}
+.container .box {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+.container .box .logo {
+  align-items: center;
+  display: flex;
+}
+.container .box .logo .logo1 {
+  width: 60px;
+}
+.container .box .logo .text {
+  color: beige;
+  margin-left: 14px;
+  font-size: 14px;
+  font-weight: 250;
+  font-family: "Raleway";
+}
+.container .box .icon {
+  width: 200px;
+  margin-left: 630px;
+}
+.container .box-l {
+  display: flex;
+}
+.container .box-l .adress {
+  width: 470px;
+  background: rgb(40, 102, 189);
+  color: white;
+  padding: 38px 0 44px 80px;
+}
+.container .box-l .adress .text-c {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Raleway";
+}
+.container .box-l .adress .text-contacts {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Raleway";
+}
+
+.link-to {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 66px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.link-to img {
+  margin-left: 14px;
+}
+.link-to:hover {
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.about {
+  background-color: #000;
+  padding-top: 212px;
+}
+.about .about-text {
+  display: flex;
+  padding-top: 130px;
+  padding-bottom: 165px;
+  position: relative;
+  background-color: #205eba;
+}
+.about .about-text .text-wrap {
+  padding-left: 62px;
+}
+.about .about-text .text-wrap p {
+  padding-bottom: 20px;
+  width: 480px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+}
+.about .about-text .text-wrap p::before {
+  content: "";
+  border-bottom: 0.1px solid white;
+  width: 38px;
+  height: 1px;
+  position: absolute;
+  left: 0px;
+  top: 143px;
+}
+.about .about-section-photo {
+  width: 473px;
+  height: 544px;
+  position: absolute;
+  left: 615px;
+  bottom: 80px;
+}
+
+.services {
+  background-color: #000;
+  padding-top: 184px;
+  padding-bottom: 180px;
+}
+.services .invisible-heading {
+  text-align: end;
+}
+.services .first .services-content {
+  width: 280px;
+}
+.services .header-block {
+  display: flex;
+}
+.services .services-heading {
+  margin-left: 25px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #fff;
+}
+.services .services-content {
+  width: 320px;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 26px;
+  color: #fff;
+  letter-spacing: 1px;
+  padding-top: 35px;
+}
+
+.works {
+  background: #000;
+}
+.works .wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+.works .wrapper .first-row {
+  display: grid;
+  grid-template-rows: repeat(2, 292px);
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+.works .wrapper .flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.works .wrapper .second-coll {
+  padding-left: 6px;
+  display: grid;
+  grid-gap: 6px;
+  grid-template-rows: 390px 275px;
+  grid-template-columns: 500px 250px;
+  justify-items: stretch;
+}
+.works .wrapper .cards {
+  width: 500px;
+  height: 327px;
+}
+.works .wrapper .mountains {
+  width: 422px;
+  height: 229px;
 }/*# sourceMappingURL=index.css.map */

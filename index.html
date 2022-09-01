@@ -19,8 +19,8 @@
                 <nav>
                     <ul class="fsb aic">
                         <li><a href="#" class="menu-item">Welcome</a></li>
-                        <li><a href="#" class="menu-item">About</a></li>
-                        <li><a href="#" class="menu-item">Services</a></li>
+                        <li><a href="#about" class="menu-item">About</a></li>
+                        <li><a href="#services" class="menu-item">Services</a></li>
                         <li><a href="#" class="menu-item">Portfolio</a></li>
                         <li><a href="#" class="menu-item">Testimonial</a></li>
                         <li><a href="#" class="menu-item">Contact</a></li>
@@ -28,7 +28,10 @@
                 </nav>
             </div>
             <div class="first-screen-content-section">
-                <img src="./assets/img/first-screen-picture.png" alt="face" class="face-photo">
+                <div class="photo-wrap">
+                    <img src="./assets/img/first-screen-picture.png" alt="face" class="face-photo">
+                    <img src="./assets/img/play-btn.png" alt="face" class="btn-photo">
+                </div>
                 <div class="content">
                     <h1 class="header">
                         Creativity comes first
@@ -37,23 +40,109 @@
                         Thinking about overseas adventure travel? Have you put any 
                         thought into the best places to go when it comes.
                     </p>
-                    <a href="#">Discover more</a>
+                    <a href="#" class="link-to">Discover more  <img src="./assets/img/arrow.png" alt="arrow right"></a>
                 </div>
             </div>
         </div>   
     </header>
-    
-    <section class="about">
-        <div class="about-text">
-            <p>
-                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-                et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-                duis dolore te feugait nulla facilisi.
-            </p>
-            <button><a href="#">Read more <img src="./assets/img/$" alt="$"></a></button> 
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="invisible-heading">About</h2>
+            <div class="about-text ">
+                <div class="text-wrap">
+                    <p>
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                        consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                        et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                        duis dolore te feugait nulla facilisi.
+                    </p>
+                    <a href="#" class="link-to">Read more <img src="./assets/img/arrow.png" alt="arrow right"></a>
+                </div>
+                <img src="./assets/img/about-face.png" alt="second man" class="about-section-photo">
+            </div>
         </div>
     </section>
+    <section class="services" id="services">
+        <h2 class="invisible-heading">Services</h2>
+        <div class="container">
+            <div class="services-section">  
+                <div class="services-section-wrap fsb">
+                    <div class="first">
+                        <div class="header-block">
+                            <img src="./assets/img/square.png" alt="#">
+                            <h2 class="services-heading">Creative</h2>
+                        </div>
+                        <p class="services-content">
+                            Mirum est notare quam littera gothica
+                            nunc putamus parum claram
+                        </p>
+                        <a href="#" class="link-to">Learn more <img src="./assets/img/arrow.png" alt="arrow right"></a>
+
+                    </div>
+                    <div class="second">
+                        <div class="header-block">
+                            <img src="./assets/img/photos.png" alt="camera">
+                            <h2 class="services-heading">Professional</h2>
+                        </div>
+                        <p class="services-content">
+                            Claritas est etiam processus dynamicus
+                            sequitur mutationem consuetudium
+                        </p>
+                         <a href="#" class="link-to">Learn more <img src="./assets/img/arrow.png" alt="arrow right"></a>
+                        
+                    </div>
+                    <div class="third">
+                        <div class="header-block">
+                            <img src="./assets/img/wallet.png" alt="wallet">
+                            <h2 class="services-heading">Money Saving</h2>
+                        </div>
+                        <p  class="services-content">
+                            Nam liber tempor cum soluta nobis eleifend 
+                            option congue nihil imperdiet doming.
+                        </p>
+                        <a href="#" class="link-to">Learn more <img src="./assets/img/arrow.png" alt="arrow right"></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="works" class="works">
+        <div class="wrapper flex-wrap ">
+            <div class="first-row">
+                <img src="./assets/img/car.png" alt="car" class="car">
+                <img src="./assets/img/window.png" alt="window" class="window">
+            </div>
+            <div class="second-coll">
+                <img src="./assets/img/plate.png" alt="plate.png" class="plate">
+                <img src="./assets/img/cards.png" alt="cards.png" class="cards">
+                <img src="./assets/img/scate.png" alt="skate" class="skate">
+                <img src="./assets/img/mountains.png" alt="mountains" class="mountains">
+                
+            </div>
+
+        </div>
+        
+
+    </section>
+    <section class="contacts">
+        <div class="container">
+           <div class="box-l">
+              <div class="adress">
+               <h2 class="text-c"> Email</h2>
+                <P class="text-contacts"> username@mail.com</P>
+                <h2 class="text-c"> Phone</h2>
+                <P class="text-contacts"> +000-111-2222</P>
+                <P class="text-contacts"> +000-111-2322</P>
+                <h2 class="text-c"> Adress</h2>
+                <P class="text-contacts"> 27, Red view street,</P>
+                <P class="text-contacts"> NY, USA</P>
+              </div>
+              <div class="touch">
+                <form action="#">
+                    <input type="text">
+                </form>
+              </div>
+           </div>
     <section class="testimonial">
         <div class="container">
           <div class="box-3"> 
@@ -138,7 +227,20 @@
                </div>
           </div>
         </div>
+       </section>
+    <section class="footer">
+        <div class="container">
+            <div class="box">
+                <div class="logo">
+                    <img class="logo1" src="./images/logo-01 copy.png" alt="">
+                    <p class="text">Copyright 2016. All Rights Recerved</p>
+                </div>
+                <div class="icon">
+                       <img src="./images/icon.png" alt="">
+                </div>
+              </div>
+            </div>
     </section>
- 
+
 </body>
 </html>
