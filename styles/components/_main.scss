@@ -17,9 +17,8 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Raleway'
+    font-family: 'Raleway';
 }
-
 
 .fsb{
     display: flex;
@@ -59,6 +58,8 @@ header{
                 }
                 & .menu-item:hover{
                     color: $nav-hover-color;
+                    font-weight: bold;
+                    letter-spacing: 2px;
 
                 }
             }
@@ -69,17 +70,14 @@ header{
         background-image:linear-gradient(0deg, #010102 0%, #031224 100%);;
         background-repeat:no-repeat;
         background-position: center;
-
-        height: 100vh;
-
     }
     & .bg-forest{
         position: absolute;
         left: 0;
         top: 0;
+        height: 784px;
         width: 100%;
-        height: auto;
-        opacity: 0.1;
+        opacity: 0.03;
     }
     // $font-size, $font-weight, $line-height, $font-color
     & .first-screen-content-section{
@@ -99,27 +97,13 @@ header{
                 letter-spacing: 1px;
                 @include font(16px,250,32px,#fff);
             }
-            & a {
-                @include font(18px,700,66px,#fff);
-                & img{
-                    margin-left: 14px;
-                }
-                
-
-            }
         }
         .photo-wrap{
             position: relative;
             .face-photo{
                 height: 544px;
                 width: 470px;
-                &::before{
-                    content: "";
-                    color: $white-color;
-                    width: 91px;
-                    height: 1px;
-                    position: absolute;
-                }
+                
             }
             .btn-photo{
                 position: absolute;
@@ -127,7 +111,16 @@ header{
                 left: 190px;
                 width: 100px;
                 height: 100px;
-                
+
+            }
+            &::before{
+                content: "";
+                border-bottom: 0.1px solid white;
+                width: 91px;
+                height: 1px;
+                position: absolute;
+                left: 435px;
+                top: 21px;
             }
         }
     }
@@ -184,12 +177,56 @@ header{
     }
 
 }
-.about{
-    width: 100%;
-    background-color: #010102;
-    @include ()
-=======
-  }  
- }
+}
+
+}
+.link-to{
+    @include font(18px,700,66px,#fff);
+    letter-spacing: 1px;
+    & img{
+        margin-left: 14px;
+    }
+    &:hover{
+        font-size: 19px;
+        letter-spacing: 2px;   
+    }
+    
+
+}
+.about {
+    background-color: #000;
+    padding-top: 212px;
+    .about-text{
+        display: flex;
+        padding-top: 130px;
+        padding-bottom: 165px;
+        position: relative;
+        background-color: #205eba;
+        & .text-wrap{
+            padding-left: 62px;
+
+            & p{
+                padding-bottom: 20px;
+                width: 480px; 
+                @include font(16px,300,30px,#fff);
+                &::before{
+                    content: "";
+                    border-bottom: 0.1px solid white;
+                    width: 38px;
+                    height: 1px;
+                    position: absolute;
+                    left: 0px;
+                    top: 143px;
+                }
+            }
+        }
+    }
+    & .about-section-photo{
+        width: 473px;
+        height: 544px;
+        position: absolute;
+        left: 615px;
+        bottom: 80px;
+    }
 
 }
