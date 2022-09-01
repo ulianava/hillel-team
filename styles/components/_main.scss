@@ -1,23 +1,10 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('../assets/fonts/');
-    src: url('../assets/fonts/?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/Raleway-Thin.woff2') format('woff2'),
-        url('../assets/fonts/Raleway-Thin.woff') format('woff'),
-        url('../assets/fonts/Raleway-Thin.ttf') format('truetype'),
-        url('../assets/fonts/Raleway-Thin.svg#Raleway-Thin') format('svg');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 .fsb{
@@ -30,6 +17,11 @@
 .container{
     margin: 0 auto;
     width: 1170px;
+}
+.invisible-heading{
+    opacity: 0.03;
+    font-family: 'Raleway';
+    @include font (128px,800,normal,#fff);
 }
 header{
     position: relative;
