@@ -20,11 +20,10 @@
     margin: 0 auto;
     width: 1170px;
 }
-.testimonial{
-    background: rgb(239, 72, 54);
+.testimonial{   
     height: 440px;
 }
-.clients, .contacts, .footer{
+.testimonial, .clients, .contacts, .footer{
     background-color: black;
 }
 // лучше прееименовать 
@@ -46,7 +45,6 @@
             margin-left: 14px;
             font-size: 14px;
             font-weight: 250;
-            font-family: "Raleway";
         }
         
     }
@@ -56,6 +54,7 @@
     }
   }
    .box-3{
+    background: rgb(239, 72, 54);
     display: flex;
      .block{
         margin-left: 50px;
@@ -85,40 +84,46 @@
       .text-c {
         font-size: 20px;
          font-weight: 700;
-       font-family: "Raleway";
     }
     .text-contacts{
         margin-bottom: 20px;
         font-size: 14px;
 font-weight: 300;
-font-family: "Raleway";
     }
   }  
    .touch{
     width: 700px;
     background: rgb(28, 28, 28);
     display: block;
+    
     .text-touch{
         font-size: 30px;
         color: #ffffff;
         font-weight: 300;
-        font-family: "Raleway";
         margin-left: 60px;
         margin-top: 65px;
     }
-    input{
-        display: none;
-    }
-    label{
-        width: 390px;
-        height: 40px;
-        background: rgb(28, 28, 28);
-        color: beige;
+    
+    .touch-sm{
         margin-left: 60px;
-        border-bottom: 1px solid beige;
-    }
-    label:hover{
-        color: blue;
+        margin-top: 30px;
+        input{
+            display: none;
+        }
+        label{
+            width: 390px;
+            height: 40px;
+            background: rgb(28, 28, 28);
+            color: beige;
+            
+            border-bottom: 1px solid beige;
+        }
+        label:hover{
+            color: blue;
+            border-bottom: 1px solid blue;
+        }
+        
+
     }
     button{
         background: rgb(28, 28, 28);
@@ -126,6 +131,7 @@ font-family: "Raleway";
         margin-left: 60px;
         margin-top: 50px;
     }
+    
     
 }
    
