@@ -12,13 +12,36 @@
   justify-content: space-between;
 }
 
-header ul {
+header .header-wrap .logo {
+  height: 33px;
+  width: 33px;
+  opacity: 1;
+}
+header .header-wrap ul {
   display: flex;
 }
-header ul li a {
+header .header-wrap ul li a {
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 26px;
   text-decoration: none;
+}
+header .header-wrap ul li a:hover {
+  color: #ef4836;
+}
+header.bg-cover {
+  background-image: linear-gradient(0deg, #010102 0%, #031224 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+  height: 100vh;
+}
+header img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.1;
 }/*# sourceMappingURL=index.css.map */
