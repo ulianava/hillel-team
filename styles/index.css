@@ -1,8 +1,84 @@
-@import './bootstrap.min.css';
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
+}
+
+.fsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+header {
+  position: relative;
+}
+header .header-wrap {
+  padding-top: 66px;
+  z-index: 2;
+}
+header .header-wrap .logo {
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  position: relative;
+}
+header .header-wrap ul {
+  width: 752px;
+}
+header .header-wrap ul li a {
+  position: relative;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 2;
+}
+header .header-wrap ul li .menu-item:hover {
+  color: #ef4836;
+}
+header.bg-cover {
+  background-image: linear-gradient(0deg, #010102 0%, #031224 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+header .bg-forest {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.1;
+}
+header .first-screen-content-section {
+  position: relative;
+}
+header .first-screen-content-section .content .header {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 66px;
+  color: #fff;
+  width: 327px;
+  letter-spacing: 2px;
+}
+header .first-screen-content-section .content p {
+  width: 508px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 250;
+  line-height: 32px;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
