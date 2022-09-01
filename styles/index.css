@@ -29,7 +29,12 @@
   width: 1170px;
 }
 
-.contacts, .footer {
+.testimonial {
+  background: rgb(239, 72, 54);
+  height: 440px;
+}
+
+.clients, .contacts, .footer {
   background-color: black;
 }
 
@@ -58,6 +63,25 @@
 .container .box .icon {
   width: 200px;
   margin-left: 630px;
+}
+.container .box-3 {
+  display: flex;
+}
+.container .box-3 .block {
+  margin-left: 50px;
+}
+.container .box-3 .block .text-test, .container .box-3 .block .text-test1 {
+  width: 490px;
+  color: #ffffff;
+  margin-top: 60px;
+}
+.container .box-3 .pagination {
+  color: rgb(194, 53, 38);
+  margin-top: 358px;
+  width: 40px;
+}
+.container .box-3 .pagination:hover {
+  color: #ffffff;
 }
 .container .box-l {
   display: flex;
@@ -111,6 +135,15 @@
   color: rgb(239, 72, 54);
   margin-left: 60px;
   margin-top: 50px;
+}
+.container .box-2 {
+  padding: 105px 0;
+}
+.container .logo2:first-child {
+  margin-left: 30px;
+}
+.container .logo2:nth-child(n+1) {
+  margin-left: 80px;
 }
 
 header {
