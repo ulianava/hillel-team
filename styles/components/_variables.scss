@@ -1,4 +1,8 @@
-@mixin font {
+@mixin font ($font-size, $font-weight, $lh, $font-color){
+   font-size: $font-size;
+   font-weight: $font-weight;
+   line-height: $lh;
+   color: $font-color;
     
 }
 $nav-hover-color: #ef4836;
