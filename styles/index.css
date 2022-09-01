@@ -97,6 +97,11 @@ header .first-screen-content-section .content p {
   line-height: 32px;
   color: #fff;
 }
+
+.about {
+  width: 100%;
+  background-color: #010102;;
+=======
 header .first-screen-content-section .content a {
   font-size: 18px;
   font-weight: 700;
