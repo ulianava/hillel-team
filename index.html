@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/index.css">
-    <script src="https://kit.fontawesome.com/02bea1b06a.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/02bea1b06a.js" crossorigin="anonymous"> </script>
 </head>
 <body>
-    <header class="bg-cover"> 
+    <header class="bg-cover" id="main"> 
         <img src="./assets/img/bg-forest.png" alt="bg-forest" class="bg-forest">
         <div class="container">
             <div class="header-wrap fsb aic">
@@ -18,12 +17,12 @@
                 </a>
                 <nav>
                     <ul class="fsb aic">
-                        <li><a href="#" class="menu-item">Welcome</a></li>
+                        <li><a href="#main" class="menu-item">Welcome</a></li>
                         <li><a href="#about" class="menu-item">About</a></li>
                         <li><a href="#services" class="menu-item">Services</a></li>
-                        <li><a href="#" class="menu-item">Portfolio</a></li>
-                        <li><a href="#" class="menu-item">Testimonial</a></li>
-                        <li><a href="#" class="menu-item">Contact</a></li>
+                        <li><a href="#works" class="menu-item">Portfolio</a></li>
+                        <li><a href="#speech" class="menu-item">Testimonial</a></li>
+                        <li><a href="#footer" class="menu-item">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -107,6 +106,22 @@
         </div>
     </section>
     <section id="works" class="works">
+        <div class="container">
+            <h2 class="invisible-heading">Works</h2>
+
+            <div  class="nav-block">
+                <ul class="fsb aic">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Abstract</a></li>
+                    <li><a href="#">Weeding</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Product</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+
         <div class="wrapper flex-wrap ">
             <div class="first-row">
                 <img src="./assets/img/car.png" alt="car" class="car">
@@ -117,46 +132,29 @@
                 <img src="./assets/img/cards.png" alt="cards.png" class="cards">
                 <img src="./assets/img/scate.png" alt="skate" class="skate">
                 <img src="./assets/img/mountains.png" alt="mountains" class="mountains">
-                
             </div>
 
         </div>
         
 
     </section>
-    <section class="contacts">
-        <div class="container">
-           <div class="box-l">
-              <div class="adress">
-               <h2 class="text-c"> Email</h2>
-                <P class="text-contacts"> username@mail.com</P>
-                <h2 class="text-c"> Phone</h2>
-                <P class="text-contacts"> +000-111-2222</P>
-                <P class="text-contacts"> +000-111-2322</P>
-                <h2 class="text-c"> Adress</h2>
-                <P class="text-contacts"> 27, Red view street,</P>
-                <P class="text-contacts"> NY, USA</P>
-              </div>
-              <div class="touch">
-                <form action="#">
-                    <input type="text">
-                </form>
-              </div>
-           </div>
-    <section class="testimonial">
-        <div class="container">
-          <div class="box-3"> 
+    <section class="testimonial" id="speech">
+        
+        <div class="container ">
+        <h2 class="invisible-heading">Speech</h2>
+          <div class="box-3 red-wrap"> 
+            <img width="470px" height="545px" class="test-here" src="./assets/img/bg.png" alt="man">
             <div class="block">
-                <img width="470px" height="545px" class="test-here" src="./assets/img/bg.png" alt="">
-            </div>
-            <div class="block">
-                <p class="text-test">Duis autem vel eum iriure dolor in vulputate velit asse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent zzril delenit augue duis dolore te feugaut  nulla facilisi.</p>
-                <p class="text-test1">David Ramon</p>
-            </div>
-            <div class="pagination">
-                <a href="#"> < </a>
-                <a href="#"> > </a>
-            </div>
+                <p class="text-test">
+                    Duis autem vel eum iriure dolor in vulputate velit asse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent zzril delenit augue duis dolore te feugaut  nulla facilisi.
+                </p>
+                <p class="text-test1 link-to">David Ramon</p>
+                <div class="pagination">
+                    <a href="#"> <i class="fa-solid fa-angle-left"></i> </a>
+                    <a href="#"> <i class="fa-solid fa-angle-right"></i> </a>
+                </div>
+            </div>x
+           
           </div> 
         </div>
     </section>
@@ -192,24 +190,24 @@
             <h3 class="text-touch">Get in Touch</h3>
             <form action="#">
                 <div class="touch-sm">
-                  <input id="name" type="text" value="Name">
-                  <label for="name">Name</label>
+                  <input id="name" type="text" placeholder="Name">
+    
                 </div>
                 <div class="touch-sm">
-                   <input id="email" type="email" required>
-                   <label for="email">Email adress</label>
+                   <input id="email" type="email" placeholder="Email adress" required>
+              
                 </div>
                 <div class="touch-sm">
-                  <input id="email" type="text">
-                  <label for="email">Message</label>
+                  <input id="email" class="touch-sm-third" type="text" placeholder="Message">
+                  
                 </div>
             </form>
-            <button>Send Now</button>
+            <a href="#" class="link-to Red">Send Now <img src="./assets/img/red-arrow.png" alt="arrow right"> </a>
           </div>
        </div>
     </div>
    </section>
-    <section class="footer">
+    <section class="footer" id="footer">
         <div class="container">
           <div class="box">
                <div class="logo">
@@ -223,24 +221,10 @@
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-dribbble"></i>
                 <i class="fa-brands fa-pinterest"></i>
-                   
                </div>
           </div>
         </div>
        </section>
-    <section class="footer">
-        <div class="container">
-            <div class="box">
-                <div class="logo">
-                    <img class="logo1" src="./images/logo-01 copy.png" alt="">
-                    <p class="text">Copyright 2016. All Rights Recerved</p>
-                </div>
-                <div class="icon">
-                       <img src="./images/icon.png" alt="">
-                </div>
-              </div>
-            </div>
-    </section>
 
 </body>
 </html>
