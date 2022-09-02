@@ -119,6 +119,7 @@
     
   .box-l{
     display: flex;
+
    .adress{
     width: 470px;
     background: rgb(40, 102, 189) ;
@@ -156,25 +157,33 @@
             width: 390px;
             height: 40px;
             background: rgb(28, 28, 28);
-            color: beige;
             border: none;
             border-bottom: 1px solid beige;
-        &:hover{
-            color: blue;
-            border-bottom: 1px solid blue;
-        }
-        &.touch-sm-third{
-            padding-bottom: 72px;
-        }
-    }
-        
-
+            outline: none;
+            &:hover{
+                color: blue;
+                border-bottom: 1px solid blue;
+               
+            }
+            &::webkit-input-placeholder{
+                color: blue;
+            }
+            
+            &:focus{
+                color: blue;
+                border-bottom: 1px solid blue;
+            }
+            &.touch-sm-third{
+                padding-bottom: 72px;
+            }
+        }   
     }
     .red{
         background: rgb(28, 28, 28);
         color: rgb(239, 72, 54);
         margin-left: 60px;
         margin-top: 50px;
+        
     }
     
     
@@ -453,14 +462,15 @@ header{
         }
     }
     .wrapper{
-        width: 1400px;
+        max-width: 1400px;
         margin: 0 auto;
         display: flex;
 
         .first-row{
             display: grid;
-            grid-template-rows: repeat(2, 292px);
-            grid-template-columns: 1fr;
+            grid-auto-flow: column;
+            grid-template-rows: 280px 40px 280px;
+            grid-template-columns: 421px 421px 120px 421px;
             gap: 6px;
         }
      
@@ -468,38 +478,47 @@ header{
             display: flex;
             flex-wrap: wrap;
         }
-        .second-coll{
-            padding-left: 6px;
-            display: grid;
-            grid-gap: 6px;  
-            grid-template-rows: 390px 275px;
-            grid-template-columns:   500px 250px;
-            justify-items: stretch;
+        .car{
+            grid-column-start: 1;
+            grid-row-start:1 ;
+            grid-row-end:2 ;
+            width: 421px;
+            height: 282px;
         }
-        // .car{
-        //     width: 416px;
-        //     height: 292px;
-        // }
-        // .window{
-        //     width: 416px;
-        //     height: 327px;
-        // }
-        // .plate{
-        //     width: 418px;
-        //     height: 327px;
-        // }
+        .window{
+            grid-column-start: 1;
+            grid-row-start:2 ;
+            grid-row-end:3 ;
+            width: 421px;
+            height: 328px;
+        }
+        .plate{  
+            grid-column-start: 2;
+            grid-row-start:1 ;
+            grid-row-end:2 ;
+            height: 328px;
+            width: 421px;
+        }
         .cards{
-            width: 500px;
-            height: 388px;
-
+            grid-column-start: 3;
+            grid-column-end: 5;
+    
+            height: 328px;
+            width: 546px;
         }
-        .mountains{
-            width: 500px;
-            height: 229px;
+        .mountains{ 
+            grid-column-start: 4;
+            grid-row-start: 3;
+            height: 282px;
+            width: 421px;
+          
         }
-        // .skate{
-        //     width: 550px;
-        //     height: 287px;
-        // }
+        .skate{
+            grid-row-start: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            width: 550px;
+            height: 282px;
+        }
     }
 }
