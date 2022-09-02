@@ -19,197 +19,36 @@
     margin: 0 auto;
     width: 1170px;
 }
-.testimonial{   
-    padding-top: 246px;
-    padding-bottom: 162px;
-    & h2{
-        text-align: end;
-    }
-
-   
-}
-.testimonial, .clients, .contacts, .footer{
-    background-color: black;
-}
-.container{
-    width: 1170px;
-   
-    & .box{
-        display: flex;
-        align-items: center;
-        padding: 40px 0;
-      .logo{
-        align-items: center;
-        display: flex;
-        .logo1{
-            width: 60px;
-        }
-        .text{
-            color: beige;
-            margin-left: 14px;
-            font-size: 14px;
-            font-weight: 250;
-        }
-        
-    }
-    .icon{
-        width: 200px;
-        margin-left: 630px;
-        i{
-            font-size: 15px;
-            color: #ffffff;
-        }
-        i:hover{
-            color: blue;
-        }
-    }
-  }
-  .red-wrap{
-    position: relative;
-    &::before{
-        content: "";
-        border-bottom: 0.1px solid white;
-        width: 91px;
-        height: 1px;
-        position: absolute;
-        left: 400px;
-        top: 140px;
-        z-index: 5;
-    }
-    & .test-here{
-        bottom: -80px;
-        position: absolute;
-    }
-}
-   .box-3{
-    background: rgb(239, 72, 54);
-
-
-    .block{
-        margin-left: 600px;
-        padding-top: 146px;
-        .text-test {
-          width: 490px;
-          @include font(16px,300, 30px, #fff);
-          font-style: italic;
-           &::before{
-            content: '"';
-            opacity: 0.7;
-            font-family: 'Raleway';
-            @include font (128px,800,0.7,#da3e2d);
-            text-transform: uppercase;
-            position: absolute;
-            left: 547px;
-          }
-       }
-    }
-    .pagination{
-        padding-left: 358px ;
-        padding-bottom: 71px;
-        i{
-            color: rgb(194, 53, 38);
-            font-size: 15px;
-            &:hover{
-                color: #ffffff;
-            }
-        }
-       
-    }
-   } 
-    
-  .box-l{
-    display: flex;
-
-   .adress{
-    width: 470px;
-    background: rgb(40, 102, 189) ;
-    color: white;
-    padding: 38px 0 44px 80px;
-      .text-c {
-        font-size: 20px;
-         font-weight: 700;
-    }
-    .text-contacts{
-        margin-bottom: 20px;
-        font-size: 14px;
-        font-weight: 300;
-    }
-  }  
-   .touch{
-    width: 700px;
-    background: rgb(28, 28, 28);
-    display: block;
-    
-    .text-touch{
-        font-size: 30px;
-        color: #ffffff;
-        font-weight: 300;
-        margin-left: 60px;
-        margin-top: 65px;
-    }
-    
-    .touch-sm{
-        margin-left: 60px;
-        margin-top: 30px;
-        input{
-            @include font(16px,300,26,#525252);
-            padding: 27px 270px 16px 12px;
-            width: 390px;
-            height: 40px;
-            background: rgb(28, 28, 28);
-            border: none;
-            border-bottom: 1px solid beige;
-            outline: none;
-            &:hover{
-                color: blue;
-                border-bottom: 1px solid blue;
-               
-            }
-            &::webkit-input-placeholder{
-                color: blue;
-            }
-            
-            &:focus{
-                color: blue;
-                border-bottom: 1px solid blue;
-            }
-            &.touch-sm-third{
-                padding-bottom: 72px;
-            }
-        }   
-    }
-    .red{
-        background: rgb(28, 28, 28);
-        color: rgb(239, 72, 54);
-        margin-left: 60px;
-        margin-top: 50px;
-        
-    }
-    
-    
-}
-   
- }
- .box-2{
-    padding: 105px 0;
- }
- .logo2:first-child{
-    margin-left: 30px;
-
- }
- .logo2:nth-child(n+1){
-    margin-left: 80px;
- }
+// bg-color
+.bg-forest{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 784px;
+    width: 100%;
+    opacity: 0.03;
 }
 
+// class <a> 
+.link-to{
+    @include font(18px,600,66px,#fff);
+    letter-spacing: 1px;
+    & img{
+        margin-left: 14px;
+    }
+    &:hover{
+        font-size: 19px;
+        letter-spacing: 2px;   
+    }
+}
 
+// класc h2 
 .invisible-heading{
     opacity: 0.03;
     font-family: 'Raleway';
     @include font (128px,800,0.7,#fff);
     text-transform: uppercase;
 }
-
 header{
     position: relative;
     & .header-wrap{
@@ -248,14 +87,6 @@ header{
         background-image:linear-gradient(0deg, #010102 0%, #031224 100%);;
         background-repeat:no-repeat;
         background-position: center;
-    }
-    & .bg-forest{
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 784px;
-        width: 100%;
-        opacity: 0.03;
     }
     // $font-size, $font-weight, $line-height, $font-color
     & .first-screen-content-section{
@@ -303,74 +134,7 @@ header{
         }
     }
 }
-
-
-
-.contacts, .footer{
-    background-color: black;
-} 
-.container{
-    width: 1170px;
-   
-    .box{
-        display: flex;
-        align-items: center;
-        padding: 40px 0;
-     .logo{
-        align-items: center;
-        display: flex;
-        .logo1{
-            width: 60px;
-        }
-        .text{
-            color: beige;
-            margin-left: 14px;
-            font-size: 14px;
-            font-weight: 250;
-            font-family: "Raleway";
-        }
-        
-    }
-    .icon{
-        width: 200px;
-        margin-left: 630px;
-    }
-  }
-  .box-l{
-    display: flex;
-   .adress{
-    width: 470px;
-    background: rgb(40, 102, 189) ;
-    color: white;
-    padding: 38px 0 44px 80px;
-      .text-c {
-        font-size: 20px;
-        font-weight: 700;
-        font-family: "Raleway";
-    }
-    .text-contacts{
-        font-size: 14px;
-        font-weight: 300;
-        font-family: "Raleway";
-    }
-
-}
-}
-
-}
-.link-to{
-    @include font(18px,600,66px,#fff);
-    letter-spacing: 1px;
-    & img{
-        margin-left: 14px;
-    }
-    &:hover{
-        font-size: 19px;
-        letter-spacing: 2px;   
-    }
-    
-
-}
+// second block
 .about {
     background-color: #000;
     padding-top: 212px;
@@ -398,6 +162,14 @@ header{
                 }
             }
         }
+        .bg-forest{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 500px;
+            width: 100%;
+            opacity: 0.05;
+        }
     }
     & .about-section-photo{
         width: 473px;
@@ -408,6 +180,8 @@ header{
     }
 
 }
+//  third block
+
 .services{
     background-color: #000;
     padding-top: 184px;
@@ -437,6 +211,8 @@ header{
 
     }
 }
+
+// fourth block
 .works{
     background: #000;
     & .invisible-heading{
@@ -521,4 +297,225 @@ header{
             height: 282px;
         }
     }
+}
+// fifth block
+.testimonial{   
+    padding-top: 246px;
+    padding-bottom: 162px;
+    & h2{
+        text-align: end;
+    }   
+}
+.testimonial, .clients, .contacts, .footer{
+    background-color: black;
+}
+.container{
+    width: 1170px;
+    .box-3{
+        background: rgb(239, 72, 54);
+        .block{
+            margin-left: 600px;
+            padding-top: 146px;
+            .text-test {
+            width: 490px;
+            @include font(16px,300, 30px, #fff);
+            font-style: italic;
+            
+                &::before{
+                    content: '"';
+                    opacity: 0.7;
+                    font-family: 'Raleway';
+                    @include font (128px,800,0.7,#da3e2d);
+                    text-transform: uppercase;
+                    position: absolute;
+                    left: 547px;
+                }
+            }
+        }
+        .pagination{
+            padding-left: 358px ;
+            padding-bottom: 71px;
+            i{
+                color: rgb(194, 53, 38);
+                font-size: 15px;
+                &:hover{
+                    color: #ffffff;
+                }
+            }
+            
+        }
+    } 
+    .red-wrap{
+        position: relative;
+        &::before{
+            content: "";
+            border-bottom: 0.1px solid white;
+            width: 91px;
+            height: 1px;
+            position: absolute;
+            left: 400px;
+            top: 140px;
+            z-index: 5;
+        }
+        & .test-here{
+            bottom: -80px;
+            position: absolute;
+        }
+    }
+    // sixth block
+    .box-2{
+        padding: 105px 0;
+        align-items: center;
+        display: flex;
+     }
+     .logo2:first-child{
+        margin-left: 30px;
+    
+     }
+     .logo2:nth-child(n+1){
+        margin-left: 80px;
+     }
+  
+// seventh block
+    .box-l{
+        display: flex;
+        & .adress{
+            position: relative;
+            background: rgb(40, 102, 189) ;
+            padding: 80px 241px 53px 82px;
+            position: relative;
+            .text-c {
+                @include font (20px,700,26px,#fff);
+            }
+            .text-contacts{
+                @include font (14px,300,26px,#fff);
+                margin-bottom: 20px;
+            }
+            &::before{
+                content: "";
+                border-bottom: 0.1px solid white;
+                width: 91px;
+                height: 1px;
+                position: absolute;
+                left: 400px;
+                top: 66px;
+            }
+            & .bg-forest{
+                height: 100%;
+                opacity: 0.07;
+            }
+        }
+    }
+    
+    .box{
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+        .logo{
+            align-items: center;
+            display: flex;
+            .logo1{
+                width: 60px;
+            }
+            .text{
+                color: beige;
+                margin-left: 14px;
+                font-size: 14px;
+                font-weight: 250;
+            }   
+        }
+        .icon{
+            width: 200px;
+            margin-left: 630px;
+            i{
+                font-size: 15px; 
+                color: #ffffff;
+            }
+            i:hover{
+                color: blue;
+            }
+        }
+    }
+
+
+    
+    & .box-l{
+        display: flex;
+        .touch{
+            background: rgb(28, 28, 28);
+            display: block;
+            padding: 55px 248px 55px 56px;
+            .text-touch{
+                font-size: 30px;
+                color: #ffffff;
+                font-weight: 300;
+            }
+            .touch-sm{
+                margin-top: 30px;
+                input{
+                    @include font(16px,300,26,#525252);
+                    padding: 27px 270px 16px 12px;
+                    width: 390px;
+                    height: 40px;
+                    background: rgb(28, 28, 28);
+                    border: none;
+                    border-bottom: 1px solid beige;
+                    outline: none;
+                    &:hover{
+                        color: blue;
+                        border-bottom: 1px solid blue;
+                    
+                    }
+                    &:focus{
+                        color: blue;
+                        border-bottom: 1px solid blue;
+                    }
+                    &.touch-sm-third{
+                        padding-bottom: 72px;
+                    }
+                }   
+            }
+            .red{
+
+                background: rgb(28, 28, 28);
+                color: rgb(239, 72, 54);
+                margin-top: 50px;
+            
+            }
+        }      
+    }
+}
+ 
+.container{
+    width: 1170px;
+    .box{
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+     .logo{
+        align-items: center;
+        display: flex;
+        .logo1{
+            width: 60px;
+        }
+        .text{
+            color: beige;
+            margin-left: 14px;
+            font-size: 14px;
+            font-weight: 250;
+            font-family: "Raleway";
+        }
+        
+    }
+        .icon{
+            width: 200px;
+            margin-left: 630px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .contacts, .footer{
+        background-color: black;
+    } 
 }
